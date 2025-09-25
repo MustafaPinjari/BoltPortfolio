@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A modern, full-featured e-commerce platform built with Next.js, featuring user authentication, payment processing, and inventory management.",
+    "image": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL", "Prisma"],
+    "liveUrl": "https://example-ecommerce.vercel.app",
+    "githubUrl": "https://github.com/mustafapinjari/ecommerce-platform",
+    "category": "E-commerce",
+    "featured": true,
+    "details": {
+      "overview": "A comprehensive e-commerce solution designed for modern businesses. Features include product catalog, shopping cart, secure checkout, user accounts, order tracking, and admin dashboard.",
+      "challenge": "Building a scalable e-commerce platform that could handle high traffic while maintaining excellent performance and user experience across all devices.",
+      "solution": "Implemented server-side rendering with Next.js for optimal SEO, used TypeScript for type safety, integrated Stripe for secure payments, and utilized PostgreSQL with Prisma ORM for efficient data management.",
+      "results": [
+        "40% increase in conversion rates compared to previous platform",
+        "99.9% uptime with automatic scaling",
+        "Mobile-first design with 95+ Lighthouse performance score",
+        "Integrated inventory management reducing manual work by 60%"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/179909/pexels-photo-179909.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.",
+    "image": "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "Express", "Material-UI"],
+    "liveUrl": "https://example-tasks.vercel.app",
+    "githubUrl": "https://github.com/mustafapinjari/task-management",
+    "category": "Web App",
+    "featured": true,
+    "details": {
+      "overview": "A full-stack task management application that enables teams to collaborate effectively with real-time updates, file sharing, and progress tracking.",
+      "challenge": "Creating a real-time collaborative environment where team members can work together seamlessly while maintaining data consistency and performance.",
+      "solution": "Built with React frontend and Node.js backend, implemented WebSocket connections using Socket.io for real-time updates, and designed a flexible MongoDB schema for scalable data storage.",
+      "results": [
+        "Improved team productivity by 35% through better task organization",
+        "Real-time collaboration with zero-conflict data synchronization",
+        "Mobile-responsive design used by teams across different time zones",
+        "Reduced project delivery time by 25% through better visibility"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Website",
+    "description": "A stunning portfolio website with 3D animations, smooth scrolling, and interactive elements. Built to showcase creative work with modern web technologies.",
+    "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "technologies": ["Next.js", "Three.js", "Framer Motion", "GSAP", "Tailwind CSS"],
+    "liveUrl": "https://example-portfolio.vercel.app",
+    "githubUrl": "https://github.com/mustafapinjari/3d-portfolio",
+    "category": "Portfolio",
+    "featured": false,
+    "details": {
+      "overview": "An interactive portfolio website featuring 3D elements, smooth animations, and immersive user experience designed to showcase creative work and technical skills.",
+      "challenge": "Creating a visually stunning portfolio that loads quickly while maintaining smooth animations and 3D graphics across all devices and browsers.",
+      "solution": "Combined Three.js for 3D graphics, Framer Motion for smooth animations, GSAP for timeline control, and optimized assets for fast loading. Implemented progressive enhancement for better accessibility.",
+      "results": [
+        "Increased client inquiries by 200% through improved presentation",
+        "Achieved 90+ performance score on all Lighthouse metrics",
+        "Featured in multiple web design showcases",
+        "Mobile-optimized with touch-friendly interactions"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "Social Media Dashboard",
+    "description": "A comprehensive social media analytics dashboard with data visualization, scheduled posting, and multi-platform integration.",
+    "image": "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "technologies": ["React", "D3.js", "Node.js", "PostgreSQL", "GraphQL", "AWS"],
+    "liveUrl": "https://example-dashboard.vercel.app",
+    "githubUrl": "https://github.com/mustafapinjari/social-dashboard",
+    "category": "Web App",
+    "featured": false,
+    "details": {
+      "overview": "A powerful analytics dashboard that aggregates data from multiple social media platforms, providing insights, scheduling capabilities, and performance tracking.",
+      "challenge": "Integrating multiple social media APIs while handling rate limits, creating meaningful data visualizations, and ensuring real-time data accuracy.",
+      "solution": "Developed with React and D3.js for interactive charts, implemented GraphQL for efficient data fetching, used PostgreSQL for reliable data storage, and deployed on AWS for scalability.",
+      "results": [
+        "Centralized management of 5+ social media platforms",
+        "Reduced content planning time by 50% through automation",
+        "Real-time analytics with customizable reporting periods",
+        "Improved engagement rates by 45% through data-driven insights"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "Fitness Mobile App",
+    "description": "A React Native fitness tracking app with workout plans, progress tracking, and social features for fitness enthusiasts.",
+    "image": "https://images.pexels.com/photos/4753928/pexels-photo-4753928.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "technologies": ["React Native", "Expo", "Firebase", "Redux", "Styled Components"],
+    "liveUrl": "https://example-fitness.app",
+    "githubUrl": "https://github.com/mustafapinjari/fitness-app",
+    "category": "Mobile App",
+    "featured": false,
+    "details": {
+      "overview": "A comprehensive fitness tracking mobile app that helps users plan workouts, track progress, connect with friends, and achieve their fitness goals.",
+      "challenge": "Creating a native mobile experience that works offline, syncs data across devices, and provides real-time tracking capabilities while maintaining battery efficiency.",
+      "solution": "Built with React Native and Expo for cross-platform compatibility, integrated Firebase for real-time data sync, implemented Redux for state management, and optimized for performance with lazy loading.",
+      "results": [
+        "10,000+ downloads within first 3 months",
+        "Average user session time of 25 minutes",
+        "89% user retention rate after 30 days",
+        "4.8/5 star rating on app stores"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/4753928/pexels-photo-4753928.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/416717/pexels-photo-416717.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "Restaurant Ordering System",
+    "description": "A complete restaurant management system with online ordering, table reservations, and kitchen management features.",
+    "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
+    "technologies": ["Vue.js", "Laravel", "MySQL", "Stripe", "Socket.io", "PWA"],
+    "liveUrl": "https://example-restaurant.com",
+    "githubUrl": "https://github.com/mustafapinjari/restaurant-system",
+    "category": "Web App",
+    "featured": true,
+    "details": {
+      "overview": "An all-in-one restaurant management solution featuring online ordering, table reservations, menu management, kitchen orders, and payment processing.",
+      "challenge": "Building a system that handles high-volume orders during peak times while coordinating between front-of-house, kitchen staff, and online customers in real-time.",
+      "solution": "Developed with Vue.js frontend and Laravel backend, implemented real-time order tracking with Socket.io, integrated Stripe for payments, and created a PWA for mobile users.",
+      "results": [
+        "Increased online orders by 150% during launch month",
+        "Reduced order processing time by 40% through automation",
+        "Improved table turnover rate by 25% with reservation system",
+        "Generated $50K+ additional revenue in first quarter"
+      ],
+      "images": [
+        "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ]
+    }
+  }
+]
