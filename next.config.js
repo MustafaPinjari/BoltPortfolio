@@ -4,12 +4,10 @@ const nextConfig = {
   output: 'export',
   
   // Disable image optimization during export
-  images: { 
-    unoptimized: true 
+  images: {
+    unoptimized: true,
+    disableStaticImages: true,
   },
-  
-  // Add basePath if you're deploying to a subdirectory
-  // basePath: '/your-repo-name',
   
   // Enable React Strict Mode
   reactStrictMode: true,
@@ -25,15 +23,40 @@ const nextConfig = {
   },
   
   // Configure webpack to handle specific module resolutions
-  webpack: (config, { isServer }) => {
-    // Important: return the modified config
+  webpack: (config) => {
+    // Fixes npm packages that depend on `fs` module
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+      os: false,
+    };
+    
+    // Fix for Radix UI template literals
+    config.module.rules.push({
+      test: /\.m?js$/,
+      exclude: /node_modules\/(?!(radix-ui|@radix-ui)\/).*/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['next/babel'],
+          plugins: ['@babel/plugin-transform-template-literals', { loose: true }]
+        }
+      }
+    });
+    
     return config;
   },
   
   // Disable server components (not needed for static export)
   experimental: {
     serverComponents: false,
+    esmExternals: 'loose',
   },
+  
+  // Handle static export paths
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
 };
 
 module.exports = nextConfig;

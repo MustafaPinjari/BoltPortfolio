@@ -78,5 +78,9 @@
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
     "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-template-literals": "^7.27.1",
+    "babel-loader": "^10.0.0"
   }
 }

@@ -1,8 +1,8 @@
 [build]
-  # The Next.js plugin will handle the build command
-  command = "npm run build"
-  # The plugin will automatically set the publish directory
-  publish = ".next"
+  # Use the standard Next.js build command
+  command = "next build && next export"
+  # The output directory for static export
+  publish = "out"
 
 [build.environment]
   # Use LTS version of Node.js
@@ -12,22 +12,20 @@
   NEXT_TELEMETRY_DISABLED = "1"
   # Enable static export
   NEXT_EXPORT = "true"
+  # Disable server components
+  NEXT_DISABLE_SERVER_COMPONENTS = "true"
 
 [context.production.environment]
   NODE_ENV = "production"
   # Enable production optimizations
   NEXT_TELEMETRY_DISABLED = "1"
 
-# Netlify Next.js plugin configuration
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  # No inputs needed - the plugin will handle everything automatically
-
-# Redirects configuration
+# Redirects configuration for SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
 
 # Development server configuration
 [dev]
