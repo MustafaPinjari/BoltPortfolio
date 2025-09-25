@@ -6,7 +6,6 @@ const nextConfig = {
   // Disable image optimization during export
   images: {
     unoptimized: true,
-    disableStaticImages: true,
   },
   
   // Enable React Strict Mode
@@ -32,15 +31,18 @@ const nextConfig = {
       os: false,
     };
     
-    // Fix for Radix UI template literals
+    // Handle Radix UI components
     config.module.rules.push({
-      test: /\.m?js$/,
-      exclude: /node_modules\/(?!(radix-ui|@radix-ui)\/).*/,
+      test: /\.(js|jsx|ts|tsx)$/,
+      exclude: /node_modules\/(?!(@radix-ui|radix-ui)\/).*/,
       use: {
         loader: 'babel-loader',
         options: {
           presets: ['next/babel'],
-          plugins: ['@babel/plugin-transform-template-literals', { loose: true }]
+          plugins: [
+            ['@babel/plugin-transform-template-literals', { loose: true }],
+            ['@babel/plugin-proposal-class-properties', { loose: true }]
+          ]
         }
       }
     });
@@ -48,15 +50,14 @@ const nextConfig = {
     return config;
   },
   
-  // Disable server components (not needed for static export)
+  // Experimental features
   experimental: {
-    serverComponents: false,
     esmExternals: 'loose',
+    // Remove serverComponents as it's not needed for static export
   },
   
   // Handle static export paths
   trailingSlash: true,
-  skipTrailingSlashRedirect: true,
 };
 
 module.exports = nextConfig;

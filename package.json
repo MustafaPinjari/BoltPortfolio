@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export -o out",
     "start": "next start",
+    "postinstall": "npm install babel-loader @babel/core @babel/preset-env @babel/preset-react @babel/plugin-transform-template-literals @babel/plugin-proposal-class-properties",
     "lint": "next lint"
   },
   "dependencies": {

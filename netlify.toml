@@ -1,6 +1,6 @@
 [build]
-  # Use the standard Next.js build command
-  command = "next build && next export"
+  # Install dependencies and build the project
+  command = "npm install && npm run build && npm run export"
   # The output directory for static export
   publish = "out"
 
@@ -8,17 +8,24 @@
   # Use LTS version of Node.js
   NODE_VERSION = "18.18.2"
   NPM_VERSION = "9.8.1"
-  # Disable Next.js telemetry
+  
+  # Next.js configuration
   NEXT_TELEMETRY_DISABLED = "1"
-  # Enable static export
-  NEXT_EXPORT = "true"
-  # Disable server components
-  NEXT_DISABLE_SERVER_COMPONENTS = "true"
-
-[context.production.environment]
   NODE_ENV = "production"
-  # Enable production optimizations
-  NEXT_TELEMETRY_DISABLED = "1"
+  
+  # Build optimizations
+  GENERATE_SOURCEMAP = "false"
+  
+  # Install babel-loader and required plugins
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Production environment settings
+[context.production]
+  command = "npm run build && npm run export"
+  
+  [context.production.environment]
+    NODE_ENV = "production"
+    NEXT_TELEMETRY_DISABLED = "1"
 
 # Redirects configuration for SPA
 [[redirects]]
@@ -29,7 +36,7 @@
 
 # Development server configuration
 [dev]
-  command = "next dev"
+  command = "npm run dev"
   port = 3000
   publish = ".next"
   targetPort = 3000
